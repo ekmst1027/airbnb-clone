@@ -1,3 +1,8 @@
 {
-    "python.pythonPath": "/Users/kyeongmin/.local/share/virtualenvs/airbnb-clone-jXQ3H3tr/bin/python"
+  "python.pythonPath": "/Users/kyeongmin/.local/share/virtualenvs/airbnb-clone-jXQ3H3tr/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Args": ["--max-line-length=88"]
 }
