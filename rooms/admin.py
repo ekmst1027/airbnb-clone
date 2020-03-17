@@ -6,7 +6,10 @@ from . import models
 class ItemAdmin(admin.ModelAdmin):
     """ Item Admin Definition """
 
-    pass
+    list_display = ("name", "used_by")
+
+    def used_by(self, object):
+        return object.rooms.count()
 
 
 @admin.register(models.Room)
@@ -43,6 +46,7 @@ class RoomAdmin(admin.ModelAdmin):
         "check_out",
         "instant_book",
         "count_amenities",
+        "count_photos",
     )
 
     list_filter = (
@@ -66,6 +70,9 @@ class RoomAdmin(admin.ModelAdmin):
 
     def count_amenities(self, object):
         return object.amenities.count()
+
+    def count_photos(self, object):
+        return object.photos.count()
 
 
 @admin.register(models.Photo)
