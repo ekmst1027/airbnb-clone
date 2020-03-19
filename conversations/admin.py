@@ -3,10 +3,17 @@ from . import models
 
 
 @admin.register(models.Message)
-class MessageAdminI(admin.ModelAdmin):
-    pass
+class MessageAdmin(admin.ModelAdmin):
+
+    """ Message Admin Definition """
+
+    list_display = ("__str__", "created")
 
 
 @admin.register(models.Conversation)
 class ConversationAdmin(admin.ModelAdmin):
-    pass
+
+    """ Conversation Admin Definition """
+
+    list_display = ("__str__", "count_messages", "count_participants")
+
