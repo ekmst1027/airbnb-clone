@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "82b518dc7c74a2589b44b0b52a616235391651a93a509fca4b5032749d1d015d"
+            "sha256": "a66c2653fdba79ef7dddb272c8a92f97775836efb57e82f22988f08c9f4e846c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -26,10 +26,19 @@
         },
         "django-countries": {
             "hashes": [
-                "sha256:fd123ae08cd5b9ea85c8cbdf4d0770e867919189048656f50fec5f728f6ffaff"
+                "sha256:2e852c9693818d64d28758a720a0cb8277673ac495af8b855c4dc64940703bd2",
+                "sha256:e2ae9b76f9a0b5f3f365b5b81fe4972df0a5878c930139586f43f7d6d50a9594"
             ],
             "index": "pypi",
-            "version": "==6.1"
+            "version": "==6.1.2"
+        },
+        "django-dotenv": {
+            "hashes": [
+                "sha256:3812bb0f4876cf31f902aad140f0645e120e51ee30eb7c40c22050f58a0e4adb",
+                "sha256:a9b1b40a70bd321acd231926acedb9bd2c5e873e33a1873b34a7276d196a765e"
+            ],
+            "index": "pypi",
+            "version": "==1.4.2"
         },
         "django-seed": {
             "hashes": [
