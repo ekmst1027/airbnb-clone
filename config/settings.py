@@ -51,7 +51,7 @@ PRJECT_APPS = [
     "conversations.apps.ConversationsConfig",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + PRJECT_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PRJECT_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
